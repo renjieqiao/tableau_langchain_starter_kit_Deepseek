@@ -27,8 +27,8 @@
 ### 🛠️ 安装  
 1. 克隆仓库  
 ```bash
-git clone https://github.com//tableau-langchain-starter-kit.git  
-cd tableau-langchain-starter-kit
+git clone https://github.com/renjieqiao/tableau_langchain_starter_kit_Deepseek.git  
+cd tableau_langchain_starter_kit_Deepseek
 ```
 2. 创建虚拟环境  
 创建虚拟环境有助于隔离项目依赖：
