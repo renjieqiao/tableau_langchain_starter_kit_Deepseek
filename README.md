@@ -40,7 +40,11 @@ python -m venv venv
 Windows:
 
 ```bash
-venv\Scriptsctivate
+venv\Scripts\activate 
+```
+若有安全报错需执行一下命令
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 ```
 macOS/Linux:
 
