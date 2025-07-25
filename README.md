@@ -1,5 +1,5 @@
 
-# Tableau LangChain 启动套件  
+# Tableau LangChain 启动套件  (DeepSeek版)
 这是一个强大的集成工具，通过 LangChain 为 Tableau Server 或 Tableau Cloud 增加 AI 功能，使用户可以用自然语言与 Tableau 中的数据进行交互。
 
 本仓库是 tableau_langchain 的实现，并已注册至 PyPi。
