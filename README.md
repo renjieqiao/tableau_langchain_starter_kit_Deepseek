@@ -15,10 +15,10 @@
 - Tableau Server 版本 2025.1 或更高版本，或 Tableau Cloud（可通过 Tableau 开发者计划获得免费的 Tableau Cloud 试用）
 - Python 3.12 或更高版本 - 下载 Python
 - Git - 下载 Git
-- 您选择的 AI 模型的 API 凭证（例如 OpenAI）
+- 您选择的 AI 模型的 API 凭证（例如 DeepSeek）
 
 ⚠️ **警告**  
-使用此代码时，来自 Tableau 的数据将被发送到外部 AI 模型（默认情况下为 OpenAI）。为了学习和测试，强烈建议使用 Tableau 自带的 Superstore 数据集。
+使用此代码时，来自 Tableau 的数据将被发送到外部 AI 模型（默认情况下为 DeepSeek）。为了学习和测试，强烈建议使用 Tableau 自带的 Superstore 数据集。
 
 如果您需要处理敏感或专有信息，建议配置工具使用本地 AI 模型，而不是外部服务。这样可以确保您的数据保持在公司内部，减少数据泄露的风险。
 
@@ -66,7 +66,7 @@ pip install --upgrade pip
 ```bash
 cp .env_template .env
 ```
-用您喜欢的文本编辑器打开 `.env` 文件，并配置以下变量：
+用您喜欢的文本编辑器打开 `.env` 文件或者可以直接用VS打开编辑，并配置以下变量：
 - # 模型提供者
 ```bash
 OPENAI_API_KEY='来自 OpenAI 开发者门户'
