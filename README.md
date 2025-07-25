@@ -69,19 +69,19 @@ cp .env_template .env
 用您喜欢的文本编辑器打开 `.env` 文件或者可以直接用VS打开编辑，并配置以下变量：
 - # 模型提供者
 ```bash
-OPENAI_API_KEY='来自 OpenAI 开发者门户'
-MODEL_PROVIDER='openai'
+OPENAI_API_KEY='来自DeepSeek 开发者门户'
+MODEL_PROVIDER='DeepSeek'
 ```
 - # LangSmith
 ```bash
 LANGCHAIN_TRACING='true'
 LANGCHAIN_API_KEY="来自 Langsmith 应用"
-LANGCHAIN_PROJECT="Langsmith 项目名称"
+LANGCHAIN_PROJECT="Langsmith 项目名称，若为空，则使用默认项目"
 ```
 - # Tableau Server / Cloud
 ```bash
 TABLEAU_DOMAIN='您的 Tableau Cloud 或 Server 域名'
-TABLEAU_SITE='您的 Tableau 站点'
+TABLEAU_SITE='您的 Tableau 站点名'
 TABLEAU_JWT_CLIENT_ID='来自 Connected App 配置页'
 TABLEAU_JWT_SECRET_ID='来自 Connected App 配置页'
 TABLEAU_JWT_SECRET='来自 Connected App 配置页'
