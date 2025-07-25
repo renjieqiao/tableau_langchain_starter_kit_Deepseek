@@ -37,16 +37,16 @@ analyze_datasource = initialize_simple_datasource_qa(
 )
 
 # Create the agent
-llm = ChatOpenAI(model="gpt-4.1", temperature=0)
-tools = [analyze_datasource]
-
-TableauLangChain = create_react_agent(
-    llm = ChatOpenAI(
+llm = ChatOpenAI(
         model="deepseek-reasoner", #deepseek-reasoner   deepseek-chat
         temperature=0,
         base_url=os.getenv("OPENAI_API_BASE"),   # DeepSeek API URL
         openai_api_key=os.getenv("OPENAI_API_KEY")
-    ) 
+    )
+tools = [analyze_datasource]
+
+TableauLangChain = create_react_agent(
+    model = llm, 
     tools = tools,
     prompt=AGENT_SYSTEM_PROMPT)
     
