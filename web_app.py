@@ -49,12 +49,17 @@ def setup_agent():
         tableau_api_version=os.environ['TABLEAU_API_VERSION'],
         tableau_user=os.environ['TABLEAU_USER'],
         datasource_luid=os.environ['DATASOURCE_LUID'],
-        tooling_llm_model="gpt-4.1-nano",
-        model_provider="openai"
+        tooling_llm_model="deepseek-reasoner",
+        model_provider="deepseek"
     )
 
     # Create the agent
-    llm = ChatOpenAI(model="gpt-4.1", temperature=0)
+    llm = ChatOpenAI(
+        model="deepseek-reasoner", #deepseek-reasoner   deepseek-chat
+        temperature=0,
+        base_url=os.getenv("OPENAI_API_BASE"),   # DeepSeek API URL
+        openai_api_key=os.getenv("OPENAI_API_KEY")
+    )
     tools = [analyze_datasource]
 
     return create_react_agent(
